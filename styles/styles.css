@@ -385,30 +385,23 @@ nav ul li a.active {
   to { transform: scale(1.1); }
 }
 
-#startTimer {
-  padding: 10px 20px;
-  background-color: #896C6C;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-#startTimer:hover {
-  background-color: #a78383;
-}
-
+#startTimer,
 #stopTimer {
-  padding: 10px 20px;
+  padding: 12px 24px;
+  margin: 10px 5px 0 5px;
   background-color: #896C6C;
   color: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
+#startTimer:hover,
 #stopTimer:hover {
   background-color: #a78383;
+  transform: scale(1.05);
 }
 
 .hidden {
