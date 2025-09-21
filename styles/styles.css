@@ -398,6 +398,19 @@ nav ul li a.active {
   background-color: #a78383;
 }
 
+#stopTimer {
+  padding: 10px 20px;
+  background-color: #896C6C;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#stopTimer:hover {
+  background-color: #a78383;
+}
+
 .hidden {
   display: none;
 }
