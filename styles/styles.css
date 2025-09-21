@@ -1,0 +1,676 @@
+/* ======================
+   Base Styles
+===================== */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #F5FAE1;
+  color: #896C6C;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ======================
+   Navigation
+===================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E5BEB5;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #896C6C;
+}
+
+nav ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #896C6C;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+nav ul li a:hover {
+  background-color: #EEE6CA;
+  color: #896C6C;
+  text-decoration: underline;
+}
+
+nav ul li a.active {
+  background-color: #EEE6CA;
+  font-weight: bold;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #896C6C;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ======================
+   Hero Section
+===================== */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: linear-gradient(135deg, #F5FAE1, #E5BEB5);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 18px;
+  color: #896C6C;
+}
+
+.quote {
+  font-size: 1.4rem;
+  font-style: italic;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* ======================
+   Cards
+===================== */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 200px;
+  min-height: 120px;
+  background-color: #E5BEB5;
+  color: #896C6C;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #EEE6CA;
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-img-proportional {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ======================
+   Footer
+===================== */
+.footer {
+  background-color: #E5BEB5;
+  color: #896C6C;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 0.9rem;
+  width: 100%;
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #896C6C;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #F5FAE1;
+}
+
+.newsletter input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 8px;
+}
+
+.newsletter button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #F5FAE1;
+  color: #896C6C;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.newsletter button:hover {
+  background-color: #E5BEB5;
+}
+
+#subscribeMsg {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* ======================
+   Recipes
+===================== */
+.recipes {
+  padding: 20px;
+  text-align: center;
+}
+
+.recipes h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.recipe-card {
+  width: 200px;
+  background-color: #E5BEB5;
+  color: #896C6C;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+  background-color: #EEE6CA;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ======================
+   Modal
+===================== */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #F5FAE1;
+  color: #896C6C;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(137, 108, 108, 0.3);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* ======================
+   Workout Generator
+===================== */
+.workout-generator {
+  padding: 30px;
+  text-align: center;
+}
+
+.workout-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.workout-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.workout-form select,
+.workout-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #EEE6CA;
+  color: #896C6C;
+  font-size: 1rem;
+}
+
+.workout-form button {
+  background-color: #E5BEB5;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.workout-form button:hover {
+  background-color: #F5FAE1;
+}
+
+.workout-display {
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.timer-section {
+  margin-top: 40px;
+}
+
+#currentExercise {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.countdown {
+  font-size: 48px;
+  color: #e53935;
+  margin: 15px 0;
+  animation: pulse 1s infinite alternate;
+}
+
+/* single pulse keyframes kept here so both workout and mindfulness can use it */
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+#startTimer {
+  padding: 10px 20px;
+  background-color: #896C6C;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#startTimer:hover {
+  background-color: #a78383;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ======================
+   Mindfulness Page
+===================== */
+.mindfulness {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.mindfulness h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.mindfulness p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #6e5555;
+}
+
+/* Breathing Circle */
+.breathing-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background: #E5BEB5;
+  transition: all 4s ease-in-out;
+  box-shadow: 0 6px 15px rgba(137, 108, 108, 0.2);
+}
+
+.breathing-circle.inhale {
+  transform: scale(1.3);
+  background: #EEE6CA;
+}
+
+.breathing-circle.exhale {
+  transform: scale(0.8);
+  background: #F5FAE1;
+}
+
+.breathing-circle.hold {
+  transform: scale(1);
+  background: #E5BEB5;
+}
+
+/* Timer */
+.timer {
+  margin: 30px 0;
+}
+
+#timeDisplay {
+  font-size: 2rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  background: #E5BEB5;
+  color: #896C6C;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: #EEE6CA;
+}
+
+/* Ambient Sounds */
+.ambient button {
+  padding: 8px 16px;
+  border: none;
+  background: #EEE6CA;
+  color: #896C6C;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.ambient button:hover {
+  background: #E5BEB5;
+}
+/* Session Log */
+.session-log {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.session-log h3 {
+  margin-bottom: 10px;
+}
+
+.session-log button {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 8px 16px;
+  border: none;
+  background: #E5BEB5;
+  color: #896C6C;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.session-log button:hover {
+  background: #EEE6CA;
+  transform: scale(1.05);
+}
+
+.session-log ul {
+  padding: 0;
+  list-style: none;
+}
+
+.session-log li {
+  background: #EEE6CA;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* ======================
+   Contact Page
+===================== */
+.contact {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #F5FAE1;
+  color: #896C6C;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #E5BEB5;
+  color: #896C6C;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #EEE6CA;
+}
+
+#formMsg {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Map Section */
+.map-section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* FAQ Accordion */
+.faq {
+  padding: 30px 20px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: #E5BEB5;
+  color: #896C6C;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #EEE6CA;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #EEE6CA;
+  padding: 0 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.faq-answer.show {
+  max-height: 200px;
+  padding: 10px;
+}
+
+.progress {
+  background: #eee;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 4px 0;
+}
+
+.progress div {
+  height: 8px;
+  background: #76c893; /* green bar */
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+
+
+/* ======================
+   Mobile / Responsive
+====================== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    background-color: #E5BEB5;
+    border-radius: 8px;
+    padding: 10px 0;
+    gap: 0;
+    display: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li a.active {
+  background-color: #EEE6CA;
+  font-weight: bold;
+}
+
+
+  nav ul li {
+    padding: 10px 20px;
+  }
+}

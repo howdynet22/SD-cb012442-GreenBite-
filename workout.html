@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Page Title</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">GreenBite</div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="mindfulness.html">Mindfulness</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="workout.html" class="active">Workout</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1> Create Your Perfect Workout</h1>
+      <p>Customized workouts to fit your body & goals!</p>
+    </div>
+  </section>
+<!-- Workout Generator -->
+
+ <div class="workout-generator">
+  <div class="workout-form">
+    <label for="bodyPart">Choose Body Part:</label>
+    <select id="bodyPart">
+      <option value="full">Full Body</option>
+      <option value="arms">Arms</option>
+      <option value="legs">Legs</option>
+      <option value="core">Core</option>
+    </select>
+
+    <label for="equipment">Choose Equipment:</label>
+    <select id="equipment">
+      <option value="none">None</option>
+      <option value="dumbbells">Dumbbells</option>
+    </select>
+
+    <button id="generateBtn">Generate Workout</button>
+  </div>
+
+  <div id="workoutDisplay"></div>
+
+<div id="timerSection" class="timer-section hidden">
+
+  <h3 id="currentExercise">Exercise</h3>
+  <div id="countdown" class="countdown">30</div>
+  <button id="startTimer">Start Timer</button>
+  <button id="stopTimer">Stop Timer</button> 
+  <audio id="beepSound" src="sounds/beep.mp3" preload="auto"></audio>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="newsletter">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email">
+      <button id="subscribeBtn">Subscribe</button>
+      <p id="subscribeMsg"></p>
+    </div>
+  </footer>
+</div>
+
+  <!-- Sound -->
+  <audio id="beepSound" src="sounds/beep.mp3" preload="auto"></audio>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>

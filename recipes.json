@@ -1,0 +1,238 @@
+{
+  "recipe1": {
+    "title": "Creamy Alfredo Pasta",
+    "img": "images/recipe1.jpg",
+    "description": "A rich and creamy pasta made with our fresh dairy products.",
+    "ingredients": [
+      "2 cups heavy cream",
+      "1/2 cup butter",
+      "1 cup Parmesan cheese",
+      "Salt & pepper to taste",
+      "Fettuccine pasta"
+    ],
+    "steps": [
+      "Cook pasta according to package instructions.",
+      "Melt butter and add cream in a saucepan.",
+      "Stir in Parmesan until smooth.",
+      "Combine pasta with sauce and serve hot."
+    ],
+    "nutrition": {
+      "calories": "620 kcal",
+      "protein": "18g",
+      "fat": "42g",
+      "carbs": "48g"
+    }
+  },
+  "recipe2": {
+    "title": "Greek Yogurt Parfait",
+    "img": "images/recipe2.jpg",
+    "description": "A healthy and delicious parfait using our organic yogurts.",
+    "ingredients": [
+      "2 cups Greek yogurt",
+      "1 cup granola",
+      "1 cup mixed berries",
+      "Honey to taste"
+    ],
+    "steps": [
+      "Layer yogurt, granola, and berries in a glass.",
+      "Drizzle with honey.",
+      "Repeat layers if desired.",
+      "Serve immediately or chill for later."
+    ],
+    "nutrition": {
+      "calories": "320 kcal",
+      "protein": "12g",
+      "fat": "8g",
+      "carbs": "48g"
+    }
+  },
+  "recipe3": {
+    "title": "Cheddar Mashed Potatoes",
+    "img": "images/recipe3.jpg",
+    "description": "Creamy mashed potatoes loaded with sharp cheddar cheese.",
+    "ingredients": [
+      "4 large potatoes",
+      "1/2 cup milk",
+      "1/4 cup butter",
+      "1 cup shredded cheddar cheese",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Boil potatoes until soft.",
+      "Mash with butter and milk.",
+      "Stir in cheddar cheese until melted.",
+      "Season and serve warm."
+    ],
+    "nutrition": {
+      "calories": "280 kcal",
+      "protein": "9g",
+      "fat": "12g",
+      "carbs": "35g"
+    }
+  },
+  "recipe4": {
+    "title": "Blueberry Smoothie",
+    "img": "images/recipe4.jpg",
+    "description": "A refreshing smoothie made with fresh blueberries and yogurt.",
+    "ingredients": [
+      "1 cup blueberries",
+      "1 banana",
+      "1 cup Greek yogurt",
+      "1/2 cup milk",
+      "Ice cubes"
+    ],
+    "steps": [
+      "Add all ingredients to a blender.",
+      "Blend until smooth.",
+      "Pour into a glass and enjoy chilled."
+    ],
+    "nutrition": {
+      "calories": "210 kcal",
+      "protein": "8g",
+      "fat": "4g",
+      "carbs": "40g"
+    }
+  },
+  "recipe5": {
+    "title": "Caprese Salad",
+    "img": "images/recipe5.jpg",
+    "description": "A fresh salad with mozzarella, tomatoes, and basil.",
+    "ingredients": [
+      "Fresh mozzarella slices",
+      "Tomato slices",
+      "Fresh basil leaves",
+      "Olive oil",
+      "Balsamic glaze",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Arrange mozzarella and tomato slices alternately on a plate.",
+      "Top with basil leaves.",
+      "Drizzle with olive oil and balsamic glaze.",
+      "Season with salt and pepper."
+    ],
+    "nutrition": {
+      "calories": "250 kcal",
+      "protein": "10g",
+      "fat": "18g",
+      "carbs": "8g"
+    }
+  },
+  "recipe6": {
+    "title": "Strawberry Milkshake",
+    "img": "images/recipe6.jpg",
+    "description": "A classic strawberry milkshake made with fresh dairy milk.",
+    "ingredients": [
+      "1 cup strawberries",
+      "2 scoops vanilla ice cream",
+      "1 cup whole milk",
+      "Sugar to taste"
+    ],
+    "steps": [
+      "Blend all ingredients until smooth.",
+      "Pour into a chilled glass.",
+      "Top with whipped cream if desired."
+    ],
+    "nutrition": {
+      "calories": "340 kcal",
+      "protein": "9g",
+      "fat": "15g",
+      "carbs": "40g"
+    }
+  },
+  "recipe7": {
+    "title": "Spinach & Cheese Omelette",
+    "img": "images/recipe7.jpg",
+    "description": "A protein-packed breakfast with fresh eggs and cheese.",
+    "ingredients": [
+      "3 eggs",
+      "1/4 cup milk",
+      "1/2 cup spinach",
+      "1/2 cup shredded cheese",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Whisk eggs with milk, salt, and pepper.",
+      "Pour into a heated pan.",
+      "Add spinach and cheese.",
+      "Cook until set, then fold and serve."
+    ],
+    "nutrition": {
+      "calories": "280 kcal",
+      "protein": "20g",
+      "fat": "18g",
+      "carbs": "4g"
+    }
+  },
+  "recipe8": {
+    "title": "Vanilla Panna Cotta",
+    "img": "images/recipe8.jpg",
+    "description": "A creamy Italian dessert made with milk and cream.",
+    "ingredients": [
+      "1 cup heavy cream",
+      "1 cup milk",
+      "1/2 cup sugar",
+      "1 tsp vanilla extract",
+      "1 packet gelatin"
+    ],
+    "steps": [
+      "Heat milk, cream, and sugar until warm.",
+      "Dissolve gelatin in warm mixture.",
+      "Add vanilla and pour into molds.",
+      "Chill for 4 hours before serving."
+    ],
+    "nutrition": {
+      "calories": "320 kcal",
+      "protein": "6g",
+      "fat": "22g",
+      "carbs": "25g"
+    }
+  },
+  "recipe9": {
+    "title": "Mac & Cheese",
+    "img": "images/recipe9.jpg",
+    "description": "Classic macaroni and cheese with a creamy cheese sauce.",
+    "ingredients": [
+      "2 cups macaroni",
+      "2 tbsp butter",
+      "2 tbsp flour",
+      "2 cups milk",
+      "2 cups shredded cheese",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Cook macaroni as directed.",
+      "Make a roux with butter and flour, add milk.",
+      "Stir in cheese until melted.",
+      "Mix with pasta and serve warm."
+    ],
+    "nutrition": {
+      "calories": "450 kcal",
+      "protein": "16g",
+      "fat": "20g",
+      "carbs": "50g"
+    }
+  },
+  "recipe10": {
+    "title": "Chocolate Yogurt Dip",
+    "img": "images/recipe10.jpg",
+    "description": "A sweet and healthy dip made with Greek yogurt and cocoa.",
+    "ingredients": [
+      "1 cup Greek yogurt",
+      "2 tbsp cocoa powder",
+      "2 tbsp honey",
+      "1 tsp vanilla extract"
+    ],
+    "steps": [
+      "Mix all ingredients until smooth.",
+      "Chill before serving.",
+      "Serve with fruit or crackers."
+    ],
+    "nutrition": {
+      "calories": "150 kcal",
+      "protein": "8g",
+      "fat": "3g",
+      "carbs": "24g"
+    }
+  }
+}

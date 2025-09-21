@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite - Page Title</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">GreenBite</div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="mindfulness.html" class="active">Mindfulness</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="workout.html">Workout</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+    </ul>
+  </nav>
+
+    <!-- Mindfulness Content -->
+    <section class="mindfulness">
+      <h1>Mindfulness Practice</h1>
+      <p>Relax and follow the guided breathing, timer, and calming sounds.</p>
+
+      <!-- Guided Breathing -->
+      <div class="breathing-circle"></div>
+      <p id="breathingText">Inhale...</p>
+
+      <!-- Timer -->
+      <div class="timer">
+        <h2>Meditation Timer</h2>
+        <div id="timeDisplay">25:00</div>
+        <div class="controls">
+          <button id="startBtn">Start</button>
+          <button id="pauseBtn">Pause</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </div>
+
+      <!-- Ambient Sounds -->
+      <div class="ambient">
+        <h2>Ambient Sounds</h2>
+        <button id="toggleSound">Play Nature Sound</button>
+        <audio id="ambientAudio" loop>
+          <source src="" type="">
+        </audio>
+      </div>
+
+      <!-- Session Log -->
+      <div class="session-log">
+        <h3>Completed Sessions</h3>
+        <button id="completeSessionBtn">Complete Session</button>
+        <ul id="sessionList"></ul>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="newsletter">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email">
+      <button id="subscribeBtn">Subscribe</button>
+      <p id="subscribeMsg"></p>
+    </div>
+  </footer>
+</div>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/mindfulness.js"></script>
+</body>
+</html>
