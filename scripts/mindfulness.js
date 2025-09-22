@@ -107,9 +107,9 @@ document.querySelectorAll(".ambient").forEach(ambient => {
   });
 });
 
-// -------------------
+
 // SESSION LOG (localStorage)
-// -------------------
+
 const sessionList = document.getElementById("sessionList");
 const completeSessionBtn = document.getElementById("completeSessionBtn");
 
@@ -139,9 +139,9 @@ function renderSessions() {
 
 renderSessions(); // load existing sessions
 
-// -------------------
-// LINK TIMER WITH LOGGING
-// -------------------
+
+// link time with session log
+
 function startTimer() {
   if (!timerInterval) {
     sessionStart = Date.now(); // mark session start
@@ -167,9 +167,9 @@ function resetTimer() {
   sessionStart = null; // reset session tracking
 }
 
-// -------------------
-// MANUAL COMPLETE SESSION BUTTON
-// -------------------
+
+// manual session log functionality
+
 completeSessionBtn.addEventListener("click", () => {
   if (sessionStart) {
     let actualDuration = Date.now() - sessionStart; // in ms
