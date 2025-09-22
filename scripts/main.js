@@ -83,7 +83,7 @@ if (subscribeBtn && emailInput && subscribeMsg) {
     subscribeMsg.textContent = "Subscribed successfully!";
     subscribeMsg.style.color = "darkgreen";
     emailInput.value = "";
-    console.log("✅ Subscribed:", email);
+    console.log(" Subscribed:", email);
   });
 }
 
@@ -372,7 +372,7 @@ if (stopTimerBtn) {
       clearInterval(interval);
       interval = null;
     }
-    currentExercise.textContent = "⏹ Timer Stopped";
+    currentExercise.textContent = "Timer Stopped";
     countdownEl.textContent = "--";
     startTimerBtn.disabled = false;
   });
@@ -396,7 +396,7 @@ function startExercise(name) {
       if (currentIndex < selectedExercises.length) {
         setTimeout(() => startExercise(selectedExercises[currentIndex]), 1000);
       } else {
-        currentExercise.textContent = "🎉 Workout Complete!";
+        currentExercise.textContent = "Workout Complete!";
         countdownEl.textContent = "Done!";
         startTimerBtn.disabled = false;
       }
