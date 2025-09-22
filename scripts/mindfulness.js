@@ -83,9 +83,14 @@ document.querySelectorAll(".ambient").forEach(ambient => {
   const button = ambient.querySelector(".toggleSound");
   const audio = ambient.querySelector("audio");
 
+  // Save original button text (e.g., "Open Sky")
+  if (!button.dataset.originalText) {
+    button.dataset.originalText = button.textContent.replace("Play ", "");
+  }
+
   button.addEventListener("click", () => {
-    // If audio is playing, pause it
     if (!audio.paused) {
+      // If audio is already playing → pause it
       audio.pause();
       button.textContent = "Play " + button.dataset.originalText;
     } else {
@@ -95,15 +100,11 @@ document.querySelectorAll(".ambient").forEach(ambient => {
         b.textContent = "Play " + b.dataset.originalText;
       });
 
+      // Play selected audio
       audio.play();
       button.textContent = "Pause " + button.dataset.originalText;
     }
   });
-
-  // Store original button text for toggling
-  if (!button.dataset.originalText) {
-    button.dataset.originalText = button.textContent.replace("Play ", "");
-  }
 });
 
 // -------------------
