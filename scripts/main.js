@@ -445,7 +445,7 @@ if (contactForm) {
 }
 
 // -------------------
-// FAQ ACCORDION
+// FAQ 
 // -------------------
 const faqQuestions = document.querySelectorAll(".faq-question");
 
