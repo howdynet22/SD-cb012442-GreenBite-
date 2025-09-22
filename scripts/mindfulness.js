@@ -80,15 +80,15 @@ updateDisplay(); // initialize display
 // ambient sount timer
 
 const toggleSoundBtn = document.getElementById("toggleSound");
-const ambientAudio = document.getElementById("ambientAudio");
+const ambientAudio = document.getElementById("song1");
 
 toggleSoundBtn.addEventListener("click", () => {
   if (ambientAudio.paused) {
     ambientAudio.play();
-    toggleSoundBtn.textContent = "Pause Nature Sound";
+    toggleSoundBtn.textContent = "Pause Calm Breeze";
   } else {
     ambientAudio.pause();
-    toggleSoundBtn.textContent = "Play Nature Sound";
+    toggleSoundBtn.textContent = "Play Calm Breeze";
   }
 });
 
