@@ -77,18 +77,32 @@ resetBtn.addEventListener("click", resetTimer);
 updateDisplay(); // initialize display
 
 
-// ambient sount timer
+// ambient sound
 
-const toggleSoundBtn = document.getElementById("toggleSound");
-const ambientAudio = document.getElementById("song1");
+document.querySelectorAll(".ambient").forEach(ambient => {
+  const button = ambient.querySelector(".toggleSound");
+  const audio = ambient.querySelector("audio");
 
-toggleSoundBtn.addEventListener("click", () => {
-  if (ambientAudio.paused) {
-    ambientAudio.play();
-    toggleSoundBtn.textContent = "Pause Calm Breeze";
-  } else {
-    ambientAudio.pause();
-    toggleSoundBtn.textContent = "Play Calm Breeze";
+  button.addEventListener("click", () => {
+    // If audio is playing, pause it
+    if (!audio.paused) {
+      audio.pause();
+      button.textContent = "Play " + button.dataset.originalText;
+    } else {
+      // Pause all other audios first
+      document.querySelectorAll("audio").forEach(a => a.pause());
+      document.querySelectorAll(".toggleSound").forEach(b => {
+        b.textContent = "Play " + b.dataset.originalText;
+      });
+
+      audio.play();
+      button.textContent = "Pause " + button.dataset.originalText;
+    }
+  });
+
+  // Store original button text for toggling
+  if (!button.dataset.originalText) {
+    button.dataset.originalText = button.textContent.replace("Play ", "");
   }
 });
 
