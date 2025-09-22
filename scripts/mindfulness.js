@@ -76,9 +76,9 @@ resetBtn.addEventListener("click", resetTimer);
 
 updateDisplay(); // initialize display
 
-// -------------------
-// AMBIENT SOUND TOGGLE
-// -------------------
+
+// ambient sount timer
+
 const toggleSoundBtn = document.getElementById("toggleSound");
 const ambientAudio = document.getElementById("ambientAudio");
 
